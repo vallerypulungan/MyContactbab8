@@ -40,5 +40,16 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("androidx.room:room-runtime:2.3.0")
+    annotationProcessor ("androidx.room:room-compiler:2.3.0")
+
+    implementation ("libs:appcompat")
+    implementation ("libs:material")
+    implementation ("libs:activity")
+    implementation ("libs:constraintlayout")
+    testImplementation ("libs:junit")
+    androidTestImplementation ("libs:ext_junit")
+    androidTestImplementation ("libs:espresso_core")
+
 
 }
