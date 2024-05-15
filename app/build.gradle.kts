@@ -1,3 +1,5 @@
+
+
 plugins {
     id("com.android.application")
 }
@@ -5,6 +7,9 @@ plugins {
 android {
     namespace = "com.example.mycontact"
     compileSdk = 34
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.example.mycontact"

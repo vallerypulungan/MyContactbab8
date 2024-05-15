@@ -1,24 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/contact_layout"
         android:layout_width="match_parent"
         android:layout_height="120dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/bg_rectangle"
-        android:orientation="horizontal"
         android:padding="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_rectangle"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
         <ImageView
             android:layout_width="60dp"
@@ -29,9 +27,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_marginLeft="@dimen/dimen_16_margin"
-
             android:layout_marginRight="@dimen/dimen_16_margin"
             android:orientation="vertical">
 
@@ -46,36 +42,50 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="User"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.05"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@color/yellow" />
 
                 <TextView
                     android:id="@+id/tv_delete"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_weight="0.05"
-                    android:background="@color/red"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="DEL"
+                    android:gravity="center"
+                    android:text="Hapus"
                     android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:background="@color/red" />
+
             </LinearLayout>
 
             <TextView
                 android:id="@+id/tv_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:text="+62123456789"
+                android:textSize="15sp"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:layout_marginTop="5dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:id="@+id/tv_call"
@@ -85,8 +95,8 @@
                     android:gravity="center"
                     android:padding="2dp"
                     android:text="Call"
-                    android:textColor="@color/silver"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textColor="@color/silver" />
 
                 <TextView
                     android:id="@+id/tv_message"
@@ -96,8 +106,8 @@
                     android:gravity="center"
                     android:padding="2dp"
                     android:text="SMS"
-                    android:textColor="@color/silver"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textColor="@color/silver" />
 
                 <TextView
                     android:id="@+id/tv_whatsapp"
@@ -107,9 +117,13 @@
                     android:gravity="center"
                     android:padding="2dp"
                     android:text="WA"
-                    android:textColor="@color/silver"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textColor="@color/silver" />
+
             </LinearLayout>
+
         </LinearLayout>
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
